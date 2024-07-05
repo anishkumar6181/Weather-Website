@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- <script
+      src="https://kit.fontawesome.com/eb42c3a17f.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body id="background">
+    <div class="container">
+      <div class="weather-page">
+        <div class="weather-app">
+          <!--List of cities -->
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <ul class="cities">
+                    <li id="Mumbai">Mumbai</li>
+                    |
+                    <li id="Kolkata">Kolkata</li>
+                    |
+                    <li id="Hyderabad">Hyderabad</li>
+                    |
+                    <li id="newdelhi">New Delhi</li>
+                    |
+                    <li id="Chennai">Chennai</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Form -->
+          <div class="row">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <form id="search-form">
+                    <input
+                      type="search"
+                      id="input-city"
+                      class="form-control shadow-sm"
+                      placeholder="Enter a city"
+                      autofocus="on"
+                      autocomplete="off"
+                    />
+                    <input
+                      type="submit"
+                      class="btn btn-secondary shadow"
+                      value="Search"
+                    />
+                    <i class="fas fa-map-marker-alt" id="currentLocation"></i>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Main body -->
+          <div class="row">
+            <!-- Left side -->
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <h1 id="city"></h1>
+                  <ul class="datetime">
+                    <li id="last-update">Last updated:</li>
+                    <li id="day"></li>
+                    <li id="date"></li>
+                    <li><span id="clock"></span> <span id="amPm"></span></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Right side -->
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <!-- upper part-->
+                  <div class="row">
+                    <div class="col temperature-section">
+                      <div class="clearfix">
+                        <img src="" alt="" id="icon" class="float-left" />
+                        <div class="temperature-part">
+                          <span id="temperature"></span>
+                          <span class="units"
+                            ><a href="#" id="toCelcius" class="active">°C</a> |
+                            <a href="#" id="toFahrenheit">°F</a></span
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!--lower part-->
+                  <div class="row">
+                    <div class="col">
+                      <p id="description"></p>
+                      <ul class="weather">
+                        <li>Cloudines: <span id="cloudines"></span>%</li>
+                        <li>Feels like: <span id="feels-like"></span>°</li>
+                        <li>Humidity: <span id="humidity"></span>%</li>
+                        <li>Wind: <span id="wind"></span>km/h</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- weather prediction-->
+          <div class="row week-prediction">
+            <div class="col">
+              <div class="card">
+                <div class="card-body">
+                  <div class="row" id="forecast"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+          <small>
+            <i class="fas fa-mobile-alt"></i> Responsive Design
+            <a
+              href="https://github.com/anishkumar6181/Weather-Website"
+              target="_blank"
+              >Open-source Code</a
+            >
+            <br />
+            Created by
+            <a href="https://www.linkedin.com/in/anishkumar6181/" target="_blank"
+              >Anish Kumar</a
+            >
+          </small>
+        </footer>
+      </div>
+    </div>
+    <script src="src/app.js"></script>
+  </body>
+</html>

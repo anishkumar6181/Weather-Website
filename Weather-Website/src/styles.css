@@ -1,0 +1,196 @@
+body {
+  font-family: "Segoe UI", "Helvetica Neue", Arial, "Noto Sans",
+    "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-size: calc(100%); */
+}
+
+/* background{
+  width: 100%;
+} */
+h1 {
+  color: #333f6e;
+  font-size: 20px;
+}
+
+h3 {
+  color: rgb(33, 37, 41);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0px;
+  max-width: 100%;
+  padding: 0 12px;
+  text-align: center;
+}
+
+a {
+  color: #3858a8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: #57595f;
+}
+ul.cities {
+  color: #3858a8;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+ul.cities li {
+  color: #3858a8;
+  display: inline;
+  text-align: left;
+  text-decoration: none;
+}
+
+ul.cities li:hover {
+  color: #192c5c;
+  text-decoration: underline;
+}
+
+li#last-update {
+  font-size: 13px;
+}
+li#day {
+  font-size: 20px;
+  line-height: 1;
+  margin-top: 5px;
+}
+
+p#description {
+  color: #434752;
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  text-transform: capitalize;
+}
+
+ul.weather {
+  color: #434752;
+  font-size: 13px;
+  position: relative;
+  margin-bottom: 0;
+}
+
+ul.weather li {
+  display: inline-block;
+  padding-right: 10px;
+}
+
+img.forecast {
+  display: block;
+  margin: -10px auto;
+  width: 70px;
+}
+
+footer {
+  color: #828794;
+  font-size: 12px;
+  margin: 16px 0;
+  padding: 8px;
+  text-align: left;
+}
+
+.weather-page {
+  max-width: 500px;
+  margin: 40px auto;
+}
+.weather-app {
+  background: #faecf3d9;
+  border: 1px solid #ececec !important;
+  border-radius: 4px;
+  box-shadow: rgb(0 0 0 / 15%) 0px 8px 16px 0px;
+  display: block;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card {
+  border: 0;
+  background: transparent;
+}
+.form-control {
+  display: inline;
+  margin-bottom: 5px;
+  width: 150px;
+}
+
+.fa-map-marker-alt {
+  color: #1476a5;
+  cursor: pointer;
+  font-size: 1.9rem;
+  position: relative;
+  top: 3px;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-secondary {
+  margin-top: -3px;
+  padding: 5px 10px;
+}
+
+#clock {
+  margin: 0;
+  font-size: 32px;
+}
+
+#amPm {
+  position: relative;
+  top: -10px;
+}
+
+.temperature-section img {
+  float: left;
+  margin-left: -5px;
+  width: 85px;
+}
+
+.temperature-section .temperature-part {
+  float: left;
+}
+
+.temperature-part span {
+  color: #333f6e;
+  float: left;
+  font-size: 40px;
+  font-weight: 400;
+  margin: 0;
+  line-height: 2;
+}
+
+.temperature-part .units {
+  font-size: 16px;
+  left: 5px;
+  position: relative;
+  top: 15px;
+}
+
+.week-prediction {
+  text-align: center;
+}
+.prediction {
+  font-size: 13px;
+}
+
+.units .active {
+  color: #000000;
+  cursor: default;
+  font-weight: bold;
+}
+
+.units .active:hover {
+  text-decoration: none;
+}
